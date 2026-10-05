@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio Arvenda Anggara Putra — Physics Student, Technical Explorer, and Future Innovator.">
+<title>Arvenda Anggara | Physics Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* ===== PENYESUAIAN LAYOUT ===== */
+.hero{min-height:0;padding:85px 5% 30px;gap:3rem}
+.hero-description{font-size:17px;margin-top:20px}
+/* Jarak atas hero-note dikurangi agar lebih naik merapat ke teks */
+.hero-note{margin-top:12px;font-size:12px}
+.note-symbol{width:32px;height:32px}
+.stats{padding:10px 24px 30px}
+.stat-item{padding:24px 22px}
+.stat-item strong{font-size:15px;margin-bottom:6px}
+.stat-item span{font-size:18px}
+.section{padding:64px 24px}
+.section-label{margin-bottom:28px;font-size:13px}
+.about-grid{gap:60px}
+.about-text{font-size:18px;line-height:1.75}
+.about-text p+p{margin-top:16px}
+.skills{margin-top:24px;gap:10px}
+.skills span,.project-tags span{font-size:12px;padding:9px 14px}
+.section-heading{margin-bottom:34px}
+.section-heading p{font-size:16px}
+.project-card{min-height:0;padding:30px;justify-content:flex-start}
+.project-content{margin-top:26px}
+.project-category{font-size:12px}
+.project-card h3{font-size:30px;margin-top:10px}
+.project-card p{font-size:15px;margin-top:12px}
+.project-tags{margin-top:18px}
+.timeline-item{padding:24px 0}
+.timeline-item h3{font-size:20px}
+.timeline-item p{font-size:15px}
+.contact{padding-bottom:70px}
+.contact-box{padding:64px 40px}
+.demo-cta{margin-top:18px;font-family:"DM Mono",monospace;font-size:12px;color:var(--accent)}
+.project-card.demo{cursor:pointer}
+
+/* ===== LOGO UPI ===== */
+.logo{display:flex;align-items:center;gap:12px}
+.upi{height:30px;width:auto;display:block}
+body.light .upi{filter:brightness(0)}
+.uni{display:inline-flex;align-items:center;gap:14px;margin-bottom:12px;}
+.uni .upi{height:44px}
+.uni span{font:11px/1.6 "DM Mono",monospace;color:var(--text-muted);text-align:left;letter-spacing:.04em}
+footer p:first-child{display:flex;align-items:center;gap:10px}
+@media(max-width:1100px){.logo .upi{display:none}}
+
+/* ===== KONTAK ===== */
+.contact-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+.c-item{display:flex;align-items:center;gap:14px;padding:16px 24px;border:1px solid var(--border);border-radius:14px;background:var(--surface);text-align:left;transition:.25s ease}
+.c-item:hover{border-color:var(--border-accent);transform:translateY(-3px)}
+.c-ico{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);flex-shrink:0}
+.c-item small{display:block;font:11px "DM Mono",monospace;letter-spacing:.08em;color:var(--text-muted);margin-bottom:2px}
+.c-item b{font-size:16px;font-weight:600}
+@media(max-width:700px){.contact-box{padding:48px 20px}.c-item{width:100%}}
+</style>
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <a href="#home" class="logo"><img class="upi" src="UPI-Logo-white.png" alt="" onerror="this.style.display='none'">ARVENDA ANGGARA PUTRA<span>.</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☼</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content reveal">
+    
+    <h1>Bridging <span>physics</span>, data, and technology<br>to build things <span>that work.</span></h1>
+    
+    <p class="hero-description">I am Arvenda Anggara Putra, a Physics student with a strong interest in experimental science, data analysis, programming, and technological innovation. I seek to understand scientific phenomena and explore how knowledge can be translated into practical applications.</p>
+    
+    <div class="hero-note"><span class="note-symbol">λ</span><span>Curiosity → Experiment → Discovery</span></div>
+  </div>
+  <div class="hero-visual reveal">
+    <div class="orbit orbit-one"><span class="particle"></span></div>
+    <div class="orbit orbit-two"><span class="particle"></span></div>
+    <div class="orbit orbit-three"><span class="particle"></span></div>
+    <div class="orbit orbit-four"><span class="particle"></span></div>
+    <div class="planet"><span>λ</span></div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat-item reveal"><strong>01</strong><span>Physics</span></div>
+  <div class="stat-item reveal"><strong>02</strong><span>Experiment</span></div>
+  <div class="stat-item reveal"><strong>03</strong><span>Data</span></div>
+  <div class="stat-item reveal"><strong>04</strong><span>Technology</span></div>
+</section>
+
+<section class="section about" id="about">
+  <div class="section-label reveal">01 — ABOUT ME</div>
+  <div class="about-grid">
+    <div class="about-title reveal"><h2>Curiosity drives <span>discovery.</span></h2></div>
+    <div class="about-text reveal">
+      <p>Saya adalah mahasiswa Fisika yang senang memahami bagaimana suatu fenomena bekerja melalui eksperimen, perhitungan, dan data.</p>
+      <p>Bagi saya, fisika bukan hanya tentang rumus. Fisika adalah cara untuk memahami masalah dan membangun solusi yang dapat diterapkan di dunia nyata.</p>
+      <div class="skills"><span>Physics</span><span>Data Analysis</span><span>Python</span><span>IoT</span><span>Experiment</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section projects" id="projects">
+  <div class="section-label reveal">02 — SELECTED WORK</div>
+  <div class="section-heading reveal">
+    <h2>Things I've <span>worked on.</span></h2>
+    <p>Beberapa proyek dan eksperimen yang menghubungkan fisika, teknologi, dan pemrograman.</p>
+  </div>
+  <div class="project-grid">
+
+    <article class="project-card demo reveal" data-app="calc">
+      <div class="project-number">01</div>
+      <div class="project-content">
+        <span class="project-category">TOOLS</span><h3>Kalkulator Ilmiah</h3>
+        <p>Kalkulator sin, cos, tan, akar, pangkat, dan konstanta (mode derajat). Aslinya aplikasi Python Tkinter, kini bisa dicoba langsung.</p>
+        <div class="project-tags"><span>Python</span><span>Tkinter</span><span>Math</span></div>
+        <div class="demo-cta">▶ KLIK UNTUK MENCOBA</div>
+      </div><span class="project-arrow">↗</span>
+    </article>
+
+    <article class="project-card demo reveal" data-app="bmi">
+      <div class="project-number">02</div>
+      <div class="project-content">
+        <span class="project-category">HEALTH TOOL</span><h3>Kalkulator BMI</h3>
+        <p>Menghitung Body Mass Index dan mengklasifikasikan kategori berat badan berdasarkan standar BMI.</p>
+        <div class="project-tags"><span>Python</span><span>Tkinter</span><span>Health</span></div>
+        <div class="demo-cta">▶ KLIK UNTUK MENCOBA</div>
+      </div><span class="project-arrow">↗</span>
+    </article>
+
+    <article class="project-card demo reveal" data-app="gempa">
+      <div class="project-number">03</div>
+      <div class="project-content">
+        <span class="project-category">DATA × ML</span><h3>Analisis &amp; Prediksi Gempa</h3>
+        <p>Analisis gempa Banten, DKI Jakarta, dan Jawa Barat 1995–2025 dengan model KNN untuk memprediksi kategori kekuatan gempa.</p>
+        <div class="project-tags"><span>KNN</span><span>Pandas</span><span>Scikit-learn</span></div>
+        <div class="demo-cta">▶ KLIK UNTUK MENCOBA</div>
+      </div><span class="project-arrow">↗</span>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-number">04</div>
+      <div class="project-content">
+        <span class="project-category">PHYSICS × AI</span><h3>Labora</h3>
+        <p>Konsep virtual AI laboratory assistant untuk membantu mahasiswa menganalisis data praktikum secara real-time.</p>
+        <div class="project-tags"><span>AI</span><span>Physics</span><span>Data</span></div>
+      </div><span class="project-arrow">↗</span>
+    </article>
+
+  </div>
+</section>
+
+<section class="section experience" id="experience">
+  <div class="section-label reveal">03 — EXPERIENCE</div>
+  <div class="experience-grid">
+    <div class="experience-intro reveal">
+      <h2>Learning by <span>building.</span></h2>
+      <p>Saya percaya pemahaman terbaik datang ketika teori bertemu dengan eksperimen dan praktik.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal"><span class="timeline-year">NOW</span><div><h3>Physics Student</h3><p>Mempelajari fisika, eksperimen, matematika, dan teknologi.</p></div></div>
+      <div class="timeline-item reveal"><span class="timeline-year">02</span><div><h3>Technical Projects</h3><p>Mengembangkan berbagai proyek berbasis data, sensor, dan pemrograman.</p></div></div>
+      <div class="timeline-item reveal"><span class="timeline-year">01</span><div><h3>Starting from Curiosity</h3><p>Berawal dari rasa ingin tahu terhadap bagaimana sesuatu bekerja.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="contact-box reveal">
+    <span class="section-label">04 — GET IN TOUCH</span>
+    <h2>Let's create something <span>meaningful.</span></h2>
+    <p>Terbuka untuk diskusi, kolaborasi, eksperimen, dan kesempatan baru.</p>
+
+    <div class="contact-links">
+      <a class="c-item" href="https://mail.google.com/mail/?view=cm&fs=1&to=anggaraputraarvenda@gmail.com" target="_blank" rel="noopener">
+        <span class="c-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <span><small>EMAIL</small><b>anggaraputraarvenda@gmail.com</b></span>
+      </a>
+      <a class="c-item" href="https://wa.me/6285211119412" target="_blank" rel="noopener">
+        <span class="c-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+        <span><small>TELEPON / WHATSAPP</small><b>+62 852-1111-9412</b></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p><img class="upi" src="UPI-Logo-white.png" alt="" onerror="this.style.display='none'"><span><span id="footerYear"></span> Arvenda Anggara Putra.</span></p>
+  <p>Physics × Technology × Curiosity</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.querySelectorAll(".project-card.demo").forEach(function(c){
+  c.onclick=function(){location.href=({calc:"kalkulator.html",bmi:"bmi.html",gempa:"gempa.html"})[c.dataset.app];};
+});
+</script>
+</body>
+</html>
